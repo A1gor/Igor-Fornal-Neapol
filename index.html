@@ -1,0 +1,158 @@
+<!doctype html>
+
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Neapol</title>
+    <meta name="Igor Fornal" content="SitePoint">
+    <link rel="shortcut icon" href="img/Neapollog.png">
+    <link rel="stylesheet" href="istyle.css">
+
+</head>
+
+<body>
+    <div>
+        <div id="wrapper">
+            <div>
+
+                <div class="topnav" id="topnav">
+                    <a id="home" class="active" href="index.html"><img src="img/Neapollog.png" alt="logo Neapolu" id="logo"> <span style="letter-spacing: 0.5em;">Neapol</span></a>
+                    <a id="Opis" href="Opis.html">Opis</a>
+                    <a id="Historia" href="Historia.html">Historia</a>
+                    <a id="Mapa" href="Polozenie.html">Mapa</a>
+                    <a id="autor">Igor Fornal 2tb</a>
+                </div>
+
+            </div>
+            <div id="content">
+                <div id="powrot">
+                    <a href="#topnav"><img src="img/It.jpg" alt="flaga włoch" style="width:60px;"></a>
+                </div>
+
+
+
+                <div id="prawe">
+                    <table id="miasto">
+                        <tbody>
+                            <tr>
+                                <th colspan="2">Neapol</th>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div>
+                                        <div>
+                                            <div class="slideshow-container">
+
+                                                <div class="mySlides fade">
+                                                    <div class="numbertext">1 / 2</div>
+                                                    <img src="img/Neapolbg.jpg" alt="Neapol1" style="width:24em;">
+
+                                                </div>
+
+                                                <div class="mySlides fade ">
+                                                    <div class="numbertext" style="color: black;">2 / 2</div>
+                                                    <img src="img/Neapollogg.png " alt="Herb Neapolu " style="width:24em;">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Informacje</th>
+                            </tr>
+                            <tr>
+                                <td>Państwo</td>
+                                <td><img alt="Włochy" src="img/It.jpg" title="Włochy" width="16" height="11">&nbsp;Włochy</td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Powierzchnia</td>
+                                <td>117 (1300 metro area) km²</td>
+                            </tr>
+
+                            <tr>
+                                <td>Populacja(2009)</td>
+                                <td>
+                                    <ul>
+                                        <li>963 661 os </li>
+                                        <li>8236 os./km²</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Kod Pocztowy</td>
+                                <td>80100
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Nr kierunkowy</td>
+                                <td>081</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <div id="ilv">
+                        <h3>Il vento doro</h3>
+                        <audio id="playAudio" controls>
+                        <source src="audio/il_vento_doro.mp3">
+                    </audio>
+                        <h3>Piosenka z anime "Jojo's Bizarre Adventures:Golden Wind", którego akcja rozgrywa się w Neapolu</h3>
+                    </div>
+                </div>
+                <div class="lewe">
+                    <div class="tresc">
+                        <h3 style="text-align: center;">Opis</h3>
+                        <div class="texti">Z powodów historycznych, artystycznych i politycznych od czasów średniowiecza miasto uznawane jest za jeden z najważniejszych ośrodków kulturalnych Europy. Neapol stanowi główny ośrodek gospodarczy, kulturalny i naukowy południowych
+                            Włoch.
+                            <br><a href="Opis.html">Czytaj więcej>>></a></div>
+                    </div>
+                    <div class="tresc">
+                        <h3 style="text-align: center;">Historia</h3>
+                        <div class="texti">Neapol założony przez Greków jako Partenope w VIII wieku p.n.e. był uznawany jako jedno z najważniejszych miast Wielkiej Grecji, głównie z racji uprzywilejowanych stosunków z Atenami. Neapol wywierał w tym okresie wielki wpływ
+                            kulturowy oraz religijny na zamieszkiwane przez ludy italskie tereny.<br><a href="Historia.html">Obejrzyj film>>></a></div>
+                    </div>
+                    <div class="tresc">
+                        <h3 style="text-align: center;">Położenie</h3>
+                        <div class="texti">Miasto położone w południowych Włoszech, w centrum Zatoki Neapolitańskiej. Stolica regionu Kampania oraz Prowincji Neapol. Miasto położone jest u podnóża Wezuwiusza. Neapol jest trzecim pod względem populacji miastem Włoch, ustępując
+                            pod tym względem Rzymowi oraz Mediolanowi.<br><a href="Polozenie.html">Zobacz mapę>>></a></div>
+                    </div>
+                    <footer id="footer">
+                        <span> Igor Fornal 2tb </span>
+                    </footer>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+
+
+            slides[slideIndex - 1].style.display = "block";
+
+            setTimeout(showSlides, 2000);
+        }
+    </script>
+</body>
+
+</html>
