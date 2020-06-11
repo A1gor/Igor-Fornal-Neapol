@@ -1,4 +1,4 @@
-                body {
+        body {
             background: url("img/Neapolbg.jpg") no-repeat center fixed;
             background-size: cover;
             font-size: 30px;
@@ -257,13 +257,10 @@
         }
         
         @media only screen and (min-width: 1300px) {
-            body {
-                font-size: unset;
-            }
             .tresc {
                 margin-left: 2vw;
                 float: none;
-                width: 50vw;
+                width: 37vw;
                 margin-right: inherit;
             }
             #ilv {
