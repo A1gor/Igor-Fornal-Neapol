@@ -304,6 +304,11 @@
                 width: 39.5px;
             }
         }
+        @media only screen and (min-width: 1800px) {
+            .tresc {
+                width: 50vw;
+            }
+        }
         
         @-webkit-keyframes fade {
             from {
